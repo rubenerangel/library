@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de gestión prestamos de libros</title>
+</head>
+<body>
+    <div>Editar Usuario</div>
+    <form action="/updateUser" method="post">
+        <input type="hidden" name="id" value="{{id}}">
+              Nombre:<input type="text" name="name" value="{{name}}"><br>
+              Dirección:<input type="text" name="address" value="{{address}}"><br>
+              Teléfono:<input type="text" name="phone" value="{{phone}}"><br>
+        <input type="submit" value="enviar">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de gestión prestamos de libros</title>
+</head>
+<body>
+    
+    <div>Sistema de gestión de bibliotecas | Usuarios &nbsp; <a href="/addUser">Agregar usuario</a></div>
+    <div>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>nombre</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+              {{each list}}
+              <tr>
+                  <td>{{$value.id}}</td>
+                  <td>{{$value.name}}</td>
+                  <td>{{$value.address}}</td>
+                  <td>{{$value.phone}}</td>
+                  <td>
+                      <a href="/editUser?id={{$value.id}}">modificar</a> | 
+                      <a href="/deleteUser?id={{$value.id}}">Eliminar</a>
+                  </td>
+              </tr>
+              {{/each}}
+        </tbody>
+        </table>
+        <a href="/">Home</a>
+    </div>
+</body>
+</html>

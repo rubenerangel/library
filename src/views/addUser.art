@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de gestión prestamos de libros</title>
+</head>
+<body>
+    <div>Agregar usuario</div>
+    <form action="/saveUser" method="post">
+                 nombre:<input type="text" name="name"><br>
+                 Dirección:<input type="text" name="address"><br>
+                 Teléfono:<input type="text" name="phone"><br>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

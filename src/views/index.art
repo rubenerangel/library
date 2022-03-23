@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de gestión prestamos de libros</title>
+    <style type="text/css">
+        body {
+            font-family: verdana, arial, helvetica;
+        }
+    </style>
+</head>
+<body>
+    
+    <div><h1>Sistema de gestión de bibliotecas</h1></div>
+    <div>
+        <a href="/users">Usuarios</a>
+        <a href="/books">Libros</a>
+        <a href="/users-books">Prestamos de Libros</a>
+    </div>
+</body>
+</html>
